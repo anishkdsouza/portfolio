@@ -1,7 +1,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #fff; /* White background */
-  color: #000; /* Black text */
+  background-color: #000;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -12,22 +12,22 @@ header {
 }
 
 h1 {
-  font-size: 5em; /* Larger title */
-  font-family: 'Arial', sans-serif; /* Regular typeface */
-  font-weight: bold; /* Chunkier title */
-  text-transform: uppercase; /* All caps */
+  font-size: 5em;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 img {
   width: 200px;
   height: 300px;
-  object-fit: cover; /* Ensures the image maintains aspect ratio while filling the space */
-  border-radius: 20px; /* Rounded corners */
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 p {
-  max-width: 800px; /* Shorter paragraph width */
-  margin: 40px auto; /* Center the paragraph horizontally */
+  max-width: 800px;
+  margin: 40px auto;
   text-align: center;
 }
 
@@ -50,7 +50,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1em;
   font-family: 'Courier New', Courier, monospace;
   text-transform: none;
@@ -60,13 +60,12 @@ nav a:hover {
   color: #ccc;
 }
 
-/* Dropdown styling */
 .dropdown-content {
   display: none;
   position: absolute;
   top: 0;
   left: 100%;
-  background-color: white;
+  background-color: #111;
   border-radius: 8px;
   overflow: hidden;
   min-width: 150px;
@@ -76,14 +75,13 @@ nav a:hover {
   display: block;
   padding: 10px;
   text-align: left;
-  color: black;
+  color: white;
 }
 
 .dropdown-content a:hover {
-  background-color: #f0f0f0;
+  background-color: #333;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -92,7 +90,7 @@ footer {
   text-align: center;
   margin-top: 50px;
   padding: 20px;
-  background-color: #000; /* Original black border */
+  background-color: #000;
   color: #fff;
-  border-top: 10px solid black; /* Black border behind footer text */
+  border-top: 1px solid #333;
 }
