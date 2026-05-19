@@ -1,19 +1,20 @@
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-image: url('IMG_6444.jpeg');
+  background-image: url('IMG_4820.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000; /* Black text */
   margin: 0;
   padding: 0;
 }
 
 header {
-  text-align: center;
-  padding: 50px 20px;
+  text-align: left; /* Left align the header content */
+  padding: 80px 20px 20px 10%; /* Pushes content 10% from the left edge */
+  max-width: 50%; /* Keeps text from bleeding into the right side */
 }
 
 h1 {
@@ -21,6 +22,7 @@ h1 {
   font-family: 'Arial', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+  margin: 0;
 }
 
 img {
@@ -28,18 +30,22 @@ img {
   height: 300px;
   object-fit: cover;
   border-radius: 20px;
+  display: block; 
+  margin: 30px 0 30px 10%; /* Perfectly aligns the image with the text column */
 }
 
 p {
-  max-width: 800px;
-  margin: 40px auto;
-  text-align: center;
+  max-width: 550px; /* Clean, readable paragraph width */
+  margin: 20px 0 20px 10%; /* Perfectly aligns the paragraph with the text column */
+  text-align: left; /* Left align paragraph text */
+  line-height: 1.6;
 }
 
 nav {
   position: fixed;
   top: 20px;
   left: 20px;
+  z-index: 1000;
 }
 
 nav ul {
@@ -55,36 +61,38 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: #000; /* Black navigation links */
   font-size: 1em;
   font-family: 'Courier New', Courier, monospace;
   text-transform: none;
 }
 
 nav a:hover {
-  color: #ccc;
+  color: #666; /* Subtle grey hover effect */
 }
 
+/* Dropdown styling adjusted for light mode text over background image */
 .dropdown-content {
   display: none;
   position: absolute;
   top: 0;
   left: 100%;
-  background-color: #111;
+  background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white box */
   border-radius: 8px;
   overflow: hidden;
   min-width: 150px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow so it stands out */
 }
 
 .dropdown-content a {
   display: block;
   padding: 10px;
   text-align: left;
-  color: white;
+  color: #000; /* Black dropdown links */
 }
 
 .dropdown-content a:hover {
-  background-color: #333;
+  background-color: #f0f0f0;
 }
 
 .dropdown:hover .dropdown-content {
@@ -92,10 +100,11 @@ nav a:hover {
 }
 
 footer {
-  text-align: center;
-  margin-top: 50px;
-  padding: 20px;
-  background-color: #000;
-  color: #fff;
-  border-top: 1px solid #333;
+  text-align: left;
+  margin-top: 80px;
+  padding: 20px 20px 40px 10%; /* Aligns with the rest of the text */
+  background-color: transparent; /* Transparent so it doesn't block the bottom right of the photo */
+  color: #000;
+  border-top: 1px solid rgba(0, 0, 0, 0.15); /* Subtle, elegant separator line */
+  max-width: 50%;
 }
