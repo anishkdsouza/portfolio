@@ -13,7 +13,8 @@ body {
 
 header {
   text-align: left;
-  padding: 120px 20px 10px 10%;
+  margin: 120px 0 10px 10%; /* Changed to margin to match paragraph alignment perfectly */
+  padding: 0;
   max-width: 50%;
 }
 
@@ -43,7 +44,8 @@ img:hover {
 
 p {
   max-width: 550px;
-  margin: 20px 0 20px 10%;
+  margin: 20px 0 20px 10%; /* Matches the header margin exactly */
+  padding: 0;
   text-align: left;
   line-height: 1.6;
 }
